@@ -15,6 +15,16 @@
     float: inside;
     width: 33%;
 }
+.LEFT50{
+    float: left;
+    width: 50%;
+    height: 400px;
+}
+.RIGHT50{
+    float: right;
+    width: 50%;
+    height: 400px;
+}
 
 .rightcolumn{
     float: right;
@@ -53,7 +63,7 @@ li a:hover{background-color: white}
 
 .overlay {
     margin-top: 600px;
-    margin-bottom: 200px;
+    margin-bottom: 370px;
     position: absolute;
     top: 0;
     left: 0;
@@ -65,12 +75,19 @@ li a:hover{background-color: white}
 
 .overlay-text {
     position: absolute;
-    top: 50%;
+    bottom: 20px; /* Odległość od dołu kontenera */
     left: 50%;
-    transform: translate(-50%, -50%); /* Wyśrodkowanie tekstu */
-    color: black; /* Kolor tekstu */
-    font-size: 100px; /* Rozmiar tekstu */
+    transform: translateX(-50%); /* Wyśrodkowanie tekstu poziomo */
+    color: black; /* Kolor tekstu (możesz dostosować kolor tekstu) */
+    font-size: 50px; /* Rozmiar tekstu */
     text-align: center; /* Wyśrodkowanie tekstu */
-    font-family: "Monotype Corsiva";
     z-index: 2; /* Wyświetl tekst nad powłoką */
+    margin-bottom: 500px;
+    font-family: "Monotype Corsiva";
+}
+.second-text {
+    bottom: -30px;
+}/* Odległość od dołu kontenera dla drugiego napisu */
+.rounded-image {
+    border-radius: 20px; /* Określenie promienia zaokrąglenia rogów */
 }
