@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    display: grid;
+}
 
 .header{
     font-size: 20px;
@@ -6,31 +10,24 @@
     font-family: "Monotype Corsiva";
 }
 
-.leftcolumn{
-    float: left;
-    width: 33%;
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+}
+.image{
+    text-align: center;
+}
+.text{
+    background-color: burlywood;
+    border-radius: 20px;
 }
 
-.middlecolumn{
-    float: inside;
-    width: 33%;
+.column{
+    flex: 1;
+    padding: 20px;
+    background-color: burlywood;
 }
-.LEFT50{
-    float: left;
-    width: 50%;
-    height: 400px;
-}
-.RIGHT50{
-    float: right;
-    width: 50%;
-    height: 400px;
-}
-
-.rightcolumn{
-    float: right;
-    width: 33%;
-}
-
 ul{
   list-style-type: none;
     margin: 0;
@@ -85,9 +82,40 @@ li a:hover{background-color: white}
     margin-bottom: 500px;
     font-family: "Monotype Corsiva";
 }
+
 .second-text {
     bottom: -30px;
 }/* Odległość od dołu kontenera dla drugiego napisu */
+
 .rounded-image {
     border-radius: 20px; /* Określenie promienia zaokrąglenia rogów */
+}
+
+.OFERT{
+    text-align: center;
+    font-family: "Monotype Corsiva";
+    height: 100px;
+    width: 100%;
+    float: left;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.text-column{
+    background-color: burlywood;
+}
+.image-column{
+    text-align: center;
+    border-radius: 20px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
