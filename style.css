@@ -1,0 +1,76 @@
+
+.header{
+    font-size: 20px;
+    text-align: center;
+    background: white ;
+    font-family: "Monotype Corsiva";
+}
+
+.leftcolumn{
+    float: left;
+    width: 33%;
+}
+
+.middlecolumn{
+    float: inside;
+    width: 33%;
+}
+
+.rightcolumn{
+    float: right;
+    width: 33%;
+}
+
+ul{
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+li {display: inline-block}
+
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Monotype Corsiva";
+}
+
+li a:hover{background-color: white}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    margin-top: 600px;
+    margin-bottom: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2); /* Kolor mgielnej powłoki (czarny z przeźroczystością) */
+    z-index: 1; /* Wyświetl powłokę nad obrazem */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Wyśrodkowanie tekstu */
+    color: black; /* Kolor tekstu */
+    font-size: 100px; /* Rozmiar tekstu */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    font-family: "Monotype Corsiva";
+    z-index: 2; /* Wyświetl tekst nad powłoką */
+}
